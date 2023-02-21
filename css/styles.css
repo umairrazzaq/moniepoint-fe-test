@@ -1,0 +1,90 @@
+:root {
+    --white: #ffffff;
+    --black: #100e19;
+    --light_grey: #cccccc;
+    --dark_grey: #0e0e19;
+    --light_green: #BAE399;
+    --dark_blue: #5957BB;
+  }
+
+body {
+    background-color: var(--dark_grey);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.text-sm {
+    font-size: small;
+}
+.text-lg {
+    font-size: large;
+}
+
+.text-primary {
+    color: var(--dark_blue);
+}
+.text-success {
+    color: var(--light_green) !important;
+}
+
+.btn.btn-primary {
+    background-color: var(--dark_blue);
+    border-color: var(--dark_blue);
+}
+.btn.btn-success {
+    color: var(--dark_grey);
+    background-color: var(--light_green);
+    border-color: var(--light_green);
+}
+
+.btn:hover,
+.btn:focus {
+    color: var(--dark_grey);
+    background-color: var(--light_green);
+}
+
+.btn-group-xl > .btn, .btn-xl {
+    padding: 0.65rem 1.35rem;
+    font-size: 1.25rem;
+}
+
+.btn-icon i,
+.btn-icon span {
+    background-color: var(--light_grey);
+    color: var(--dark_grey);
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    display: inline-block;
+    border-radius: 50px;
+}
+    .btn-icon:hover i,
+    .btn-icon:focus i,
+    .btn-icon:hover span,
+    .btn-icon:focus span {
+        background-color: var(--dark_grey);
+        color: var(--light_grey);
+    }
+
+/* carouselTicker */
+.carouselTicker .list-inline-item:not(:last-child) {
+    margin-right: 0;
+}
+/* .carouselTicker ul.list-inline-item {
+    margin-right: 5px;
+} */
+
+.modal.right.fade .modal-dialog {
+    transform: translate(100%,0);
+    -webkit-transition: transform 0.5s linear, right 0.5s linear;
+       -moz-transition: transform 0.5s linear, right 0.5s linear;
+         -o-transition: transform 0.5s linear, right 0.5s linear;
+            transition: transform 0.5s linear, right 0.5s linear;
+}
+
+.modal.right.fade.in .modal-dialog,
+.modal.right.fade.show .modal-dialog {
+    transform: translate(0,0);
+}
